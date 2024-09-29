@@ -1,6 +1,6 @@
-drop table if exists hosptialch;
+drop table if exists hospital;
 
-CREATE TABLE IF NOT EXISTS Hospitalch (
+CREATE TABLE IF NOT EXISTS Hospital (
 	id SERIAL PRIMARY KEY,
 	state VARCHAR(5) NOT NULL,
 	name VARCHAR(30) NOT NULL UNIQUE,
@@ -9,3 +9,24 @@ CREATE TABLE IF NOT EXISTS Hospitalch (
 	contact VARCHAR(7),
 	address VARCHAR(50)
 	);
+
+/*城市,啟始時間,結束時間,最高溫度,最低溫度,感覺*/
+
+CREATE TABLE IF NOT EXISTS weather(
+    id SERIAL PRIMARY KEY,
+	city VARCHAR(20) NOT NULL,
+    startDate timestamp,
+	endDate timestamp,
+	hight real,
+	low real,
+	status VARCHAR(20)
+);
+
+/*車站代號,車站中文名稱,車站英文名稱*/
+
+CREATE TABLE IF NOT EXISTS TaiwanRailwayStationNum(
+    id SERIAL PRIMARY KEY,
+	code CHAR(4) NOT NULL UNIQUE,
+    name CHAR(7) UNIQUE,
+	e_name CHAR(20) UNIQUE,
+);
