@@ -22,11 +22,11 @@ CREATE TABLE IF NOT EXISTS weather(
 	status VARCHAR(20)
 );
 
-/*車站代號,車站中文名稱,車站英文名稱*/
+/*車站代碼,中文站名,英文站名*/
 
-CREATE TABLE IF NOT EXISTS TaiwanRailwayStationNum(
+CREATE TABLE IF NOT EXISTS TaiwanRailwayStationCode (
     id SERIAL PRIMARY KEY,
-	code CHAR(4) NOT NULL UNIQUE,
-    name CHAR(7) UNIQUE,
-	e_name CHAR(20) UNIQUE,
+	code VARCHAR(5) NOT NULL UNIQUE,
+    ch_name VARCHAR(20) UNIQUE,
+	en_name VARCHAR(50)
 );
