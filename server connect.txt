@@ -1,3 +1,11 @@
 render_postgresql_4vg2_user
 LMOVidcpG3Zh4FhMOFjqRpKPUFLLV5sr
 dpg-crnslsl6l47c73ak9170-a.singapore-postgres.render.com
+
+render_postgresql_database_for_chihlee_user
+6fg0U0HPlxNmTuiKE3W2x1OX2hdI8kGa
+dpg-csep6vdsvqrc73f72bag-a.singapore-postgres.render.com/render_postgresql_database_for_chihlee
+
+postgresql://render_postgresql_database_for_chihlee_user:
+6fg0U0HPlxNmTuiKE3W2x1OX2hdI8kGa@
+dpg-csep6vdsvqrc73f72bag-a.singapore-postgres.render.com/render_postgresql_database_for_chihlee
