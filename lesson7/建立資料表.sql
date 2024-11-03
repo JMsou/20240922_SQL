@@ -1,7 +1,8 @@
 CREATE TABLE IF NOT EXISTS 市場(
 	name VARCHAR(20),
 	country VARCHAR(20),
-	PRIMARY KEY(name)
+	PRIMARY KEY(name),
+	UNIQUE(name,country) -- 不可有重複的資料
 );
 
 CREATE TABLE IF NOT EXISTS 股市(
@@ -15,6 +16,7 @@ CREATE TABLE IF NOT EXISTS 股市(
 	volume BIGINT DEFAULT 0,
 	name VARCHAR(20),
 	PRIMARY KEY(stock_id),
+	UNIQUE(date,name),
 	FOREIGN KEY(name) REFERENCES 市場(name) 
 	ON DELETE NO ACTION
 	ON UPDATE CASCADE
